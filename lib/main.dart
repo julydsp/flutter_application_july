@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'row_widget.dart';
+import 'baris_kolom.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp( 
       title : 'klinik',
-      home : rowwidget(),
+      home :Bariskolom(),
     );
   }
 }
