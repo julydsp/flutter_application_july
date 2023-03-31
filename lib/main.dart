@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'baris_kolom.dart';
+import 'ui/poli_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -9,8 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp( 
-      title : 'klinik',
-      home :Bariskolom(),
+      title : 'KLINIK APP',
+      debugShowCheckedModeBanner: false,
+      home : polipage(),
     );
   }
 }
