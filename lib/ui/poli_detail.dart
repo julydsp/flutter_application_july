@@ -18,8 +18,9 @@ class _PoliDetailState extends State<PoliDetail> {
       body: Column(
         children: [
           SizedBox(height: 20),
-          Text("Nama Poli : ${widget.poli.namaPoli}",
-          style: TextStyle(fontSize: 20),
+          Text(
+            "Nama Poli : ${widget.poli.namaPoli}",
+            style: TextStyle(fontSize: 20),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,

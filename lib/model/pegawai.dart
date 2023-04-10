@@ -1,18 +1,19 @@
 class Pegawai {
-  int? id;
-  String nip;
-  String nama;
-  String tanggal_lahir;
-  String nomor_telp;
-  String email;
-  String password;
+  late int id;
+  late String nip;
+  late String nama;
+  late String tanggalLahir;
+  late String nomorTelepon;
+  late String email;
+  late String password;
 
-  Pegawai({this.id, 
-  required this.nip,
-  required this.nama,
-  required this.tanggal_lahir,
-  required this.nomor_telp,
-  required this.email,
-  required this.password
-  });
+  Pegawai(Map pegawai) {
+    id = pegawai['id'];
+    nip = pegawai['nip'];
+    nama = pegawai['nama'];
+    tanggalLahir = pegawai['tanggalLahir'];
+    nomorTelepon = pegawai['nomorTelepon'];
+    email = pegawai['email'];
+    password = pegawai['password'];
+  }
 }
